@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Home</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="login-box">
+                <h1>Acesse sua conta</h1>
+                <hr>
+
+                <form name="login" method="post" target="_top" action="cadastro.html" onsubmit="return validarAcesso()">
+                    <div class="input-group">
+                        <label for="user">Usuario: </label>
+                        <input type="text" name="user" id="user" placeholder="Insira seu usuario" required>
+                        <br>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Senha: </label>
+                        <input type="password" name="password" id="password" placeholder="insira sua senha" required>
+                        <br>
+                    </div>
+                    <br>
+                    <div class="button-group">
+                        <button type="submit">Entrar</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>

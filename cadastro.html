@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Formulario de Cadastro</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="register-box">
+                <h1>Cadastro de Novo Usuario</h1>
+                <hr>
+                
+                <form name="Cadastro" method="post" target="_top" onsubmit="return validarFormulario()">
+                    <div class="input-group">
+                        <label for="name">Nome: </label>
+                        <input type="text" name="name" id="name"required>
+                        <br>
+                    </div>
+                    <div class="input-group">
+                        <label for="lName">Sobrenome: </label>
+                        <input type="text" name="lName" id="lName">
+                        <br>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="gender">Gênero: </label>
+                        <div class="radio-buttons">
+                            <div>
+                                <input type="radio" id="genero1" name="genero" value="M">
+                                <label for="genero1">M</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="genero2" name="genero" value="F">
+                                <label for="genero2">F</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="genero3" name="genero" value="Outro">
+                                <label for="genero3">Outro</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="age">Idade: </label>
+                        <input type="number" name="age" id="age" min="0" max="120">
+                        <br>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email"> Email: </label>
+                        <input type="email" name="email" id="email" required>
+                        <br>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Senha: </label>
+                        <input type="password" name="password" id="password" pattern=".{8,20}" title="Minimo de 8 caracteres" required>
+                        <br>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Telefone: </label>
+                        <input type="tel" name="phone" id="phone">
+                        <br>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit">Enviar</button>
+                    </div>            
+                </form>
+            </div>    
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
